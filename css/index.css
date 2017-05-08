@@ -1,0 +1,146 @@
+#container {
+    max-width: 1280px;
+}
+/*------------------HEADER----------------*/
+header {
+    height: 800px;
+    display: block;
+    background-image: url("../img/header-slider-one.jpg");
+    background-size: cover;
+}
+.social-icon {
+    float: left;
+    width: 250px;
+    text-align: center;
+}
+.header-search {
+    float: right;
+    width: 250px;
+}
+.navigation {
+    margin: 0 auto;
+    width: 770px;
+    text-align: center;
+    line-height: 32px;
+}
+.social-icon li,
+.navigation li,
+.header-search a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+}
+.navigation li a {
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 1rem;
+}
+.header-search a {
+    float: right;
+}
+.site-name {
+    clear: left;
+    margin: 307px 0;
+}
+.site-name h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+.btn-down {
+    text-align: center;
+}
+/*------------------END HEADER----------------*/
+
+/*------------------- MAIN--------------------*/
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+.upcoming-shows {
+    font-size: 20px;
+}
+h2 {
+    font-size: 3rem;
+    margin: 60px 0 30px;
+    padding: 5px;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #1BB2E0;
+    margin: 0 0 60px;
+    padding: 5px;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    
+    margin: 0 auto;
+    border-spacing: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+table a {
+    text-decoration: none;
+    color: #fff;
+}
+td {
+    border-bottom: 1px solid #fff;
+    padding: 10px 40px;
+}
+.release-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.more-info {
+    clear: left;
+    margin: 20px;
+    text-align: center;
+}
+.more-info a {
+    color: #807C79;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.release-audio h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+audio {
+    width: 50%;
+}
+.buy-release {
+    float: left;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px 10px 0 0;
+}
+.buy-release a {
+    text-decoration: none;
+    color: #807C79;
+}
+.new-video {
+    text-align: center;
+}
+figure {
+    float: left;
+    text-align: center;
+}
+figure a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
