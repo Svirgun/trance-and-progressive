@@ -1,146 +1,145 @@
-#container {
-    max-width: 1280px;
+* {
+    margin: 0;
+    padding: 0;
+    color: #7b7b7b;
 }
-/*------------------HEADER----------------*/
+a {
+    color: #fff;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+h1, h2, h3 {
+    color: #dcdcdc;
+}
+section span {
+    color: #18aebf;
+}
+html, body {
+    height: 100%;
+}
 header {
-    height: 800px;
-    display: block;
+    height: 100%;
     background-image: url("../img/header-slider-one.jpg");
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
 }
-.social-icon {
-    float: left;
-    width: 250px;
-    text-align: center;
-}
-.header-search {
-    float: right;
-    width: 250px;
-}
-.navigation {
-    margin: 0 auto;
-    width: 770px;
-    text-align: center;
-    line-height: 32px;
-}
-.social-icon li,
-.navigation li,
-.header-search a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-}
-.navigation li a {
-     text-decoration: none;
-     color: #fff;
-     text-transform: uppercase;
-     font-size: 1rem;
-}
-.header-search a {
-    float: right;
+nav {
+    height: 15%;
 }
 .site-name {
-    clear: left;
-    margin: 307px 0;
+    height: 70%;
+}
+.bottom-icon {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .site-name h1 {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     text-transform: uppercase;
+    text-shadow: 0 -12px 5px #595959;
+}
+.top-navigation {
+    display: flex;
+}
+.social-icon, .top-menu {
+    flex: 1;
+}
+.top-menu {
+    flex: 6;
+    justify-content: center;
+}
+.social-icon ul, .top-menu ul {
+    height: 100%;
+    text-transform: uppercase;
+}
+.social-icon ul, .top-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon ul li {
+    padding: 0 10px;
+}
+.top-menu ul li {
+    padding: 24px 0px;
+}
+.top-menu ul li a{
+    padding: 24px 20px;
+}
+.top-menu ul li a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+.social-icon img,
+.bottom-icon img {
+    width: 48px;
+}
+.upcoming-show {
+    background-color: rgba(27, 27, 27, 1);
+}
+.title {
     text-align: center;
+    padding: 80px 0 60px;
+}
+.title h2 {
     font-size: 3rem;
+    padding-bottom: 5px;
+} 
+div.events {
+    padding: 80px 0;
 }
-.btn-down {
-    text-align: center;
+ul.events {
+    margin: 0 200px;
+    border-bottom: 1px solid #dcdcdc;
 }
-/*------------------END HEADER----------------*/
-
-/*------------------- MAIN--------------------*/
-section {
-    width: 80%;
-    margin: 0 auto;
+.events ul li {
+    height: 70px;
+    line-height: 70px;
 }
-.upcoming-shows {
-    font-size: 20px;
-}
-h2 {
-    font-size: 3rem;
-    margin: 60px 0 30px;
-    padding: 5px;
-    text-align: center;
-}
-h3 {
-    font-size: 1.5rem;
+.events-information {
+    display: flex;
     text-transform: uppercase;
-    color: #1BB2E0;
-    margin: 0 0 60px;
-    padding: 5px;
-    text-align: center;
 }
-table {
-    border-collapse: collapse;
-    
-    margin: 0 auto;
-    border-spacing: 0px;
-    text-transform: uppercase;
-    text-align: center;
+ul.events-information li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
-table a {
-    text-decoration: none;
-    color: #fff;
+.new-album-release {
+    background-color: #151515;
 }
-td {
-    border-bottom: 1px solid #fff;
-    padding: 10px 40px;
+.media {
+    display: flex;
+    padding: 80px 0;
 }
-.release-image {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+.image img {
+    max-width: 400px;
 }
-.more-info {
-    clear: left;
-    margin: 20px;
-    text-align: center;
+.image, .audio {
+    flex: 1;
 }
-.more-info a {
-    color: #807C79;
-    text-decoration: none;
-    font-size: 1.5rem;
+.image {
+    text-align: right;
+    margin: 0 10px;
 }
-.release-audio h4 {
-    font-size: 1.5rem;
-    margin: 10px 0;
+.audio {
+    text-align: left;
+    margin: 0 10px;
+}
+.audio h4 {
+    margin-bottom: 10px;
+}
+.song {
+    margin-bottom: 10px;
 }
 audio {
-    width: 50%;
-}
-.buy-release {
-    float: left;
-    padding: 8px 12px;
-    font-size: 1.2rem;
-    background-color: #fff;
-    margin-top: 30px;
-    border-radius: 10px 10px 0 0;
-}
-.buy-release a {
-    text-decoration: none;
-    color: #807C79;
-}
-.new-video {
-    text-align: center;
-}
-figure {
-    float: left;
-    text-align: center;
-}
-figure a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
-}
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
+    max-width: 80%;
 }
