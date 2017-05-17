@@ -131,6 +131,13 @@ ul.events-information li {
     flex: 1;
     justify-content: center;
 }
+ul.events li {
+    transition: .5s;
+}
+ul.events:hover li {
+    color: white;
+    transition: .3s;
+}
 .new-album-release,
 .featured-video {
     background-color: #151515;
@@ -351,7 +358,15 @@ ul.events {
 .events ul li {
     height: 20px;
     line-height: 20px;
+    letter-spacing: 5px;
 } 
+ul.events li {
+    transition: .5s;
+}
+ul.events:hover li {
+    color: white;
+    transition: .3s;
+}
 .media {
     display: block;
 }
@@ -395,4 +410,97 @@ figure:hover {
     transition: 0.1s;
 }
 }
+ 
+
+@media only screen and (max-width: 499px){
+.social-icon {
+    padding: 20px 0;
+}
+.social-icon ul {
+    justify-content: space-around;
+}
+.top-menu {
+    margin: 50px 0 0;
+}
+.top-menu ul {
+    flex-direction: column;
+    display: block;
+}
+.top-menu ul li {
+    padding: 0;
+    text-align: center;
+    letter-spacing: 10px;
+    transition: .2s;
+}
+.top-menu ul li:hover {
+    letter-spacing: 12px;
+    background-color: rgba(255,255,255,.1);
+    transition: .2s;
+}
+.top-menu ul li a {
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+nav {
+    height: 55%;
+}
+.site-name {
+    height: 35%;
+}
+.site-name h1 {
+    font-size: 1.5rem;
+    color: #18aebf;
+    text-shadow: 0 -5px 15px #18aebf;
+}
+.bottom-icon {
+    height: 10%;
+    align-items: center;
+}
+.upcoming-show, 
+.discography, 
+.new-album-release {
+    padding: 0;
+}
+.events ul li {
+    font-size: 1.5rem;
+    height: 35px;
+    letter-spacing: 2px;
+}
+ul.events {
+    height: 140px;
+    margin: 15px 0;
+}
+ul.events li {
+    transition: .9s;
+}
+ul.events:hover li {
+    color: white;
+    transition: .5s;
+}
+.featured-images {
+    padding: 0 0 80px;
+}
+.more-images a {
+    font-size: 1.2rem;
+}
+video {
+    width: 360px;
+}
+footer {
+    padding: 0 0 150px;
+}
+.user-information input {
+    background-color: rgba(0,0,0,.8);
+    margin: 0;
+}
+.massege textarea {
+    background-color: rgba(0,0,0,.8);
+}
+.send-btn {
+    justify-content: center;
+}
     
+    
+}   
