@@ -12,7 +12,7 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-         <header>
+         <header id="home">
             <nav>
                 <div class="top-navigation">
                     <div class="social-icon">
@@ -22,15 +22,15 @@
                             <li><a href="#"><img src="../img/twitter.svg" alt="twitter-icon"></a></li>
                         </ul>
                     </div>
-                    <div class="top-menu">
+                    <div class="top-menu" id="menu">
                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">events</a></li>
-                            <li><a href="#">music</a></li>
-                            <li><a href="#">gallery</a></li>
-                            <li><a href="#">video</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#upcoming-show">events</a></li>
+                            <li><a href="#new-album-release">music</a></li>
+                            <li><a href="#gallery-images">gallery</a></li>
+                            <li><a href="#featured-video">video</a></li>
+                            <li><a href="#discography">blog</a></li>
+                            <li><a href="#footer-form">contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,10 +43,10 @@
             </div>
          </header>
          <main>
-             <section class="upcoming-show">
+             <section id="upcoming-show" class="upcoming-show">
                  <div class="title">
                      <h2>Upcoming <span>Shows</span></h2>
-                     <h3>TOUR DATES 2017</h3>
+                     <h3>tour dates 2017</h3>
                  </div>
                  <div class="events">
                      <ul class="events">
@@ -99,13 +99,13 @@
                      </ul>
                  </div>
              </section>
-             <section class="new-album-release">
+             <section id="new-album-release" class="new-album-release">
                   <div class="title">
                      <h2>New <span>Album Release</span></h2>
                      <h3>BLACK HOLE RECORDINGS</h3>
                      <div class="media">
                         <div class="image">
-                            <img src="../img/black-hole-recordings.jpg" alt="marta juell - calling.mp3"></img>
+                            <img src="../img/black-hole-recordings.jpg" alt="marta juell - calling.mp3">
                         </div>
                         <div class="audio">
                             <div class="song">
@@ -120,10 +120,113 @@
                                     <source src="audio/marcia-juell-calling-mark_norman_remix.mp3" type="audio/mpeg">Your browser does not support the audio element.
                                 </audio>
                             </div>
+                            <div class="more-info">
+                                <a href="#">buy album from itunes</a>
+                            </div>
                         </div>
                     </div>
                  </div>
              </section>
+             <section id="gallery-images" class = "gallery-images">
+                 <div class="title">
+                     <h2>Featured <span>Gallery Images</span></h2>
+                     <h3>our images</h3>
+                 </div>
+                 <div class="featured-images">
+                     <div class="first-line-images">
+                         <div class="preview-image">
+                             <img src="../img/slide-one.jpg" alt="slide-one">
+                        </div>
+                        <div class="preview-image small-image">
+                             <img src="../img/slide-six.jpg" alt="slide-six">
+                        </div>
+                        <div class="preview-image">
+                             <img src="../img/slide-two.jpg" alt="slide-two">
+                        </div>
+                        <div class="preview-image">
+                             <img src="../img/slide-three.jpg" alt="slide-three">
+                        </div>
+                    </div>
+                    <div class="second-line-images">
+                        <div class="preview-image">
+                             <img src="../img/slide-four.jpg" alt="slide-four">
+                        </div>
+                        <div class="preview-image">
+                             <img src="../img/slide-five.jpg" alt="slide-five">
+                        </div>
+                        <div class="preview-image small-image">
+                             <img src="../img/slide-seven.jpg" alt="slide-seven">
+                        </div>
+                        <div class="preview-image">
+                             <img src="../img/slide-eight.jpg" alt="slide-eight">
+                        </div>
+                    </div>
+                    <div class="more-images">
+                        <a href="#">more images</a>
+                    </div>
+                 </div>
+             </section>
+             <section id="featured-video" class="featured-video">
+                 <div class="title">
+                     <h2>Featured<span> Video</span></h2>
+                     <h3>sensation white preview</h3>
+                 </div>
+                 <div class="video-preview">
+                    <video controls poster="img/poster.jpg">
+                        <source src="video/The-Anthem-2004.mp4" type="video/mp4">Your browser does not support HTML5 video.
+                    </video>
+                 </div>
+             </section>
+             <section id="discography" class="discography">
+                <div class="title">
+                    <h2>Latest<span> News</span></h2>
+                    <h3>blog</h3>
+                </div>
+                <div class="more-blog">
+                    <figure>
+                        <figcaption>
+                            <a href="#">dj tiesto</a>
+                        </figcaption>
+                        <a href="#" class="full-img"><img src="img/tiesto.jpg" alt="tiesto"></a>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            <a href="#">alex morph</a>
+                        </figcaption>
+                        <a href="#" class="full-img"><img src="img/morph-alex.jpg" alt="morph-alex"></a>
+                    </figure>
+                    <figure>
+                        <figcaption>
+                            <a href="#">markus shulz</a>
+                        </figcaption>
+                        <a href="#" class="full-img"><img src="img/markus-schulz.jpg" alt="markus-schulz"></a>
+                    </figure>
+                    <div class="more-images">
+                        <a href="#">more blog</a>
+                    </div>
+                </div>
+            </section>
          </main>
+         <footer id="footer-form">
+            <div class="title">
+                <h2>Send us a<span> message</span></h2>
+                <h3>get in touch</h3>
+            </div>
+            <form action="https://formspree.io/svirgunzinovij@gmail.com" method="POST">
+                <div class="user-information">
+                    <input type="text" name="your-name" placeholder="Name" required>
+                    <input type="email" name="your-email" placeholder="Email" required>
+                    <input type="text" name="phone-number" placeholder="Phone" required>    
+                </div>
+                <div class="massege">
+                    <textarea rows="10" cols="50" placeholder="Massage"></textarea>
+                </div>
+                <div class="send-btn">
+                    <input type="submit" value="Send Email">
+                </div>
+            </form>
+         </footer>
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+         <script type="text/javascript" src="js/index.js"></script>   
     </body>
 </html>
