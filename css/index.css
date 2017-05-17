@@ -23,15 +23,18 @@ html, body {
     margin: 0 auto;
     height: 100%;
 }
+html {
+    min-width: 340px;
+}
 header {
     height: 100%;
-    background-image: url("../img/header-slider-one.jpg");
+    /*background-image: url("../img/header-slider-one.jpg");*/
+    background-image: url("../img/woman-1081873_1920.jpg");
+    background-color: #247f98;
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
-}
-nav {
-    height: 15%;
 }
 .site-name {
     height: 70%;
@@ -275,8 +278,9 @@ a.full-img {
     width: 100%;
 }
 footer {
-    background-color: #000;
-    background-image: url("../img/footer-image.jpg");
+    background-image: url(../img/footer-image.jpg);
+    background-color: #7f8483;
+    background-blend-mode: color-burn;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -413,6 +417,14 @@ figure:hover {
  
 
 @media only screen and (max-width: 499px){
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 .social-icon {
     padding: 20px 0;
 }
@@ -445,18 +457,20 @@ figure:hover {
 }
 nav {
     height: 55%;
+    order: 2;
 }
 .site-name {
-    height: 35%;
+    height: 15%;
+    order: 1;
 }
 .site-name h1 {
     font-size: 1.5rem;
-    color: #18aebf;
-    text-shadow: 0 -5px 15px #18aebf;
+    text-shadow: 0 0 0 #18aebf;
 }
 .bottom-icon {
-    height: 10%;
+    height: 30%;
     align-items: center;
+    order: 3;
 }
 .upcoming-show, 
 .discography, 
@@ -490,13 +504,6 @@ video {
 }
 footer {
     padding: 0 0 150px;
-}
-.user-information input {
-    background-color: rgba(0,0,0,.8);
-    margin: 0;
-}
-.massege textarea {
-    background-color: rgba(0,0,0,.8);
 }
 .send-btn {
     justify-content: center;
