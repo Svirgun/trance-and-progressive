@@ -376,7 +376,7 @@ footer {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 0 25% 150px;
+    padding: 0 25% 50px;
 }
 .user-information {
     display: -webkit-box;
@@ -450,11 +450,16 @@ input::placeholder{
 textarea::placeholder {
     color: #fff;
 }
+.copyright {
+    text-align: center;
+    padding-top: 150px;
+    color: #18aebf;
+}
 
 /*----------------------------------@media--------------------------*/
 @media only screen and (max-width: 1280px){
 footer {
-    padding: 0 15% 150px;
+    padding: 0 15% 50px;
 }
 }
 @media only screen and (max-width: 950px){
@@ -560,7 +565,7 @@ figure:hover {
     padding: 20px 0;
 }
 footer {
-    padding: 0 10% 150px;
+    padding: 0 10% 50px;
 }
 }
  
@@ -705,6 +710,6 @@ form {
     padding: 20px 0;
 }
 footer {
-    padding: 0 10% 150px;
+    padding: 0 10% 50px;
 }
 }   
